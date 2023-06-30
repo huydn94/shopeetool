@@ -28,7 +28,7 @@ def apply_info():
     linklist = linklist_txt.split(",")
     lenlinklist = len(linklist)
     #linklist_output = [link.split() for link in linklist_output]
-    print ("Đã nhận tham số")
+    #print ("Đã nhận tham số")
     #print (linklist)
 
 #open từng link
@@ -59,10 +59,10 @@ def open_main():
         progress_label.place(x=250, y=210)            
         parent.update_idletasks()    
 
-        print("lan thu: ",j)
+        #print("lan thu: ",j)
         time.sleep(wait_time)
         close_all_chrome_windows()
-        time.sleep(10)
+        time.sleep(random.randint(25,100))
 
 #    progress_bar.stop()
 #close all chrome windows đã bật
